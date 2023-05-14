@@ -1,0 +1,14 @@
+{
+  "name": "image-slider",
+  "version": "1.0.0",
+  "description": "Image Slider displays a series of random images.",
+  "main": "script.js",
+  "scripts": {
+    "watch": "npx tailwindcss -i ./input.css -o ./output.css --watch"
+  },
+  "author": "Abdulrahman Rahhal",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
