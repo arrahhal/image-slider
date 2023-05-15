@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./output.css" />
-
+    <script
+      src="https://kit.fontawesome.com/2f19e50481.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Image slider</title>
   </head>
   <body class="bg-slate-400 min-h-screen flex justify-center items-center">
@@ -22,30 +25,30 @@
         </button>
         <div
           id="image-frame"
-          class="w-full transition-transform duration-500 flex aspect-auto overflow-x-hidden border-8 border-slate-50 md:aspect-video"
+          class="w-full relative transition-transform duration-500 flex aspect-auto overflow-hidden border-8 border-slate-50 md:aspect-video"
         >
           <img
-            class="img w-full shrink-0 transition-all ease-in-out duration-1000"
+            class="absolute img w-full shrink-0 transition-all ease-in-out duration-1000"
             src="./imgs/alejandro-escamilla-unsplash.jpg"
             alt=""
           />
           <img
-            class="img w-full shrink-0 transition-all ease-in-out duration-1000"
+            class="absolute img w-full shrink-0 transition-all ease-in-out duration-1000"
             src="./imgs/austin-neill-unsplash.jpg"
             alt=""
           />
           <img
-            class="img w-full shrink-0 transition-all ease-in-out duration-1000"
+            class="absolute img w-full shrink-0 transition-all ease-in-out duration-1000"
             src="./imgs/nicholas-swanson-unsplash.jpg"
             alt=""
           />
           <img
-            class="img w-full shrink-0 transition-all ease-in-out duration-1000"
+            class="absolute img w-full shrink-0 transition-all ease-in-out duration-1000"
             src="./imgs/p-j--unsplash.jpg"
             alt=""
           />
           <img
-            class="img w-full shrink-0 transition-all ease-in-out duration-1000"
+            class="absolute img w-full shrink-0 transition-all ease-in-out duration-1000"
             src="./imgs/p-j-unsplash.jpg"
             alt=""
           />
@@ -61,7 +64,7 @@
           />
         </button>
       </div>
-      <div class="dots"></div>
+      <div id="dots" class="flex justify-center gap-4 my-4"></div>
     </div>
     <script src="./script.js"></script>
   </body>
